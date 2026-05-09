@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('objetivos', function (Blueprint $table) {
             $table->id();
-            $table->titulo();
-            $table->motivo();
-            $table->fecha();
+            $table->string('titulo');
+            $table->string('motivos');
+            $table->date('fecha_objetivo');
             $table->timestamps();
         });
     }
